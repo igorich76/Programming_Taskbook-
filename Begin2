@@ -1,0 +1,6 @@
+uses PT4;
+begin
+  Task('Begin2');
+  var a:=ReadlnReal;
+  Print(a * a);
+end.
