@@ -1,0 +1,4 @@
+##
+var a := ReadlnInteger;
+  Println((a div 100)+(a div 10 mod 10)+(a mod 10));
+  Println((a div 100)*(a div 10 mod 10)*(a mod 10));
