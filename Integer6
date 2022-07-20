@@ -1,0 +1,4 @@
+##
+var a:=ReadlnInteger; 
+Println(a div 10);
+Println(a mod 10);
