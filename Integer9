@@ -1,0 +1,3 @@
+##
+var a := ReadInteger;
+Print(a div 100);
