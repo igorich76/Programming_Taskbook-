@@ -1,0 +1,3 @@
+##
+var a:=ReadlnInteger;
+Print(a div 1000);
