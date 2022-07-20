@@ -1,0 +1,4 @@
+##
+var (a,b):=ReadlnReal2;
+Println(a*b);
+Print(2*(a+b));
