@@ -1,0 +1,8 @@
+uses PT4;
+const pi=3.14;
+begin
+  Task('Begin4');
+  var d:=ReadlnReal;
+  Print(pi*d);
+end.
+
