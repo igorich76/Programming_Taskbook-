@@ -1,0 +1,10 @@
+##
+var n := ReadInteger;
+var (a,m) := (0,0); 
+while n > 0 do 
+ begin
+   a := n mod 10;
+   m := m * 10 + a;
+   n := n div 10;
+ end;
+m.Print;
