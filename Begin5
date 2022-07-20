@@ -1,0 +1,4 @@
+##
+var a:=ReadlnReal;
+Println(a*a*a);
+Print(6*(a*a));
