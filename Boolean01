@@ -1,0 +1,5 @@
+##
+var a := ReadlnInteger;
+  If (Sign(a) > 0) then Write(true);
+  If (Sign(a) = 0) then Write(false);
+  If (Sign(a) < 0) then Write(false);
