@@ -1,0 +1,18 @@
+##
+var x := ReadlnReal;
+  if (x <= 0) then x := x * (-1)
+    else 
+      if (x > 0) and (x < 2) then x := x * x
+      else 
+        if (x >= 2) then x := 4;
+  Print(x);
+  // только так строго и делать. Если написать
+  {
+  ##
+var x := ReadlnReal;
+  if (x <= 0) then x := x * (-1);
+  if (x > 0) and (x < 2) then x := x * x;
+  if (x >= 2) then x := 4;
+  Print(x);  
+  }
+  // то ответ будет постоянно ошибочный
