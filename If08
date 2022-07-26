@@ -1,0 +1,12 @@
+##
+var (a,b) := ReadlnReal2;
+  if (a > b) then 
+  begin
+    a.Println;
+    b.Println;
+  end;
+  if (a < b) then 
+  begin
+    b.Println;
+    a.Println;
+  end;
