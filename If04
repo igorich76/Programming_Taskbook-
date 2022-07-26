@@ -1,0 +1,7 @@
+##
+var (a,b,c) := ReadlnInteger3;
+  var s := 0;
+  If (Sign(a) > 0) then s := s+1;
+  If (Sign(b) > 0) then s := s+1;
+  If (Sign(c) > 0) then s := s+1;
+  s.Print;
