@@ -1,0 +1,3 @@
+##
+var (a,b) := ReadlnReal2;
+  Print(Max(a,b)); 
