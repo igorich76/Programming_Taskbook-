@@ -1,0 +1,32 @@
+//ох, и помучился я с этой задачей... Трудная!!1
+uses PT4;
+
+begin
+  Task('Case9');
+  var (D, M) := ReadlnInteger2;
+  D := D+1;
+  case M of 
+      1,3,5,7,8,10: if (D=32) then
+        begin
+          D := 1;
+          M := M+1;
+        end;
+      4,6,9,11: if (D=31) then
+        begin
+          D := 1;
+          M := M+1;
+        end;  
+      2: if (D=29) then
+        begin
+          D := 1;
+          M := M+1;
+        end;  
+      12: if (D=32) then 
+        begin
+          D := 1;
+          M := 1;
+        end;      
+   end;
+  
+  Print(D, M); 
+end.
