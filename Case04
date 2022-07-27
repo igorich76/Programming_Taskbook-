@@ -1,0 +1,20 @@
+uses PT4;
+
+begin
+  Task('Case4');
+  var K := ReadlnInteger;
+  case K of
+    1: Print(31);
+    2: Print(28);
+    3: Print(31);
+    4: Print(30);
+    5: Print(31);
+    6: Print(30);
+    7: Print(31);
+    8: Print(31);
+    9: Print(30);
+    10: Print(31);
+    11: Print(30);
+    12: Print(31);
+  end;  
+end.
