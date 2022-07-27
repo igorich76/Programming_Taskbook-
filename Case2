@@ -1,0 +1,14 @@
+uses PT4;
+
+begin
+  Task('Case2');
+  var K := ReadlnInteger;
+  case K of
+    1: Print('плохо');
+    2: Print('неудовлетворительно');
+    3: Print('удовлетворительно');
+    4: Print('хорошо');
+    5: Print('отлично');
+    else Print('ошибка');
+  end;  
+end.
