@@ -1,0 +1,13 @@
+uses PT4;
+const n = 10;
+begin
+  Task('For5');  
+  var a := ReadlnReal();//стоимость 1 кг конфет
+  var b := a / n; //делю килограмм на 10 частей
+  var s := 0.0; 
+  for var i := 1 to n do 
+    begin
+      s += b;
+      Print(s);
+    end;
+end.
