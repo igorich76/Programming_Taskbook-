@@ -1,0 +1,16 @@
+uses PT4;
+
+begin
+  Task('For13');
+  var n := ReadInteger();
+  var rez := 0.0;
+  var k := -1;
+  for var i := 1 to n do
+    begin
+      k *= (-1);
+      rez := rez+k*(1+0.1*i);
+    end;
+  Print(rez);
+end.
+
+// списал. Не совсем понял алгоритм... х.з.
