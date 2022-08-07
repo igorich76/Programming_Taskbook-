@@ -1,0 +1,12 @@
+uses PT4;
+
+begin
+  Task('For15');
+  var A := ReadReal('Введите число>>');
+  var N := ReadInteger('введите степень>>');
+  var rez := 1.0;
+  for var i := 1 to N do
+    rez *= A;
+  Print(rez);
+end.
+//лёгкая задача
