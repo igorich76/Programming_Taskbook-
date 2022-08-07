@@ -1,0 +1,14 @@
+uses PT4;
+
+begin
+  Task('For12');
+  var n := ReadInteger();
+  var (a,s,b) := (1.1,0.0,1.0);
+  s := a;
+  for var i := 1 to n do
+    begin
+      b *= s;
+      s += 0.1;      
+    end;
+  Print(b);
+end.
