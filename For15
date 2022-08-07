@@ -10,3 +10,19 @@ begin
   Print(rez);
 end.
 //лёгкая задача
+//вариант с визуальным представлением:
+
+{$apptype windows}
+uses graphabc;
+
+begin
+  SetWindowSize(500,100); //ширина, высота
+  var A := ReadReal('Введите число>>');
+  Println(A);
+  var N := ReadInteger('введите степень>>');
+  Println(N);
+  var rez := 1.0;
+  for var i := 1 to N do
+    rez *= A;
+  Print(rez);
+end.
