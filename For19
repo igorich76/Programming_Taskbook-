@@ -1,0 +1,10 @@
+uses PT4;
+
+begin
+  Task('For19');
+  var N := ReadlnInteger('Введите число>>');
+  var Rez := 1.0;
+  for var i := 1 to N do    
+      Rez *= i;    
+ Print(Rez);//можно так - Write('!',N,'= ',Rez); но авто проверку не пройдёт!
+end.
