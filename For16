@@ -1,0 +1,13 @@
+uses PT4;
+
+begin
+  Task('For16');
+  var a := ReadlnReal('Введите число>>');
+  var N := ReadlnInteger('Введите степень>>');
+  var s := 1.0;
+  for var i := 1 to N do
+    begin
+      s := s*a;
+      Print(s);
+    end;
+end.
