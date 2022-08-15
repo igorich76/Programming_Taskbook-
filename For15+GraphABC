@@ -16,13 +16,14 @@ end.
 uses graphabc;
 
 begin
-  SetWindowSize(500,100); //ширина, высота
-  var A := ReadReal('Введите число>>');
+  SetWindowSize(300,150); //ширина, высота
+  SetFontSize(20); //размер шрифта!
+  var A := ReadlnReal('Введите число>>');
   Println(A);
-  var N := ReadInteger('введите степень>>');
+  var N := ReadlnInteger('Введите степень>>');
   Println(N);
   var rez := 1.0;
   for var i := 1 to N do
     rez *= A;
-  Print(rez);
+  Println('Ответ=',rez);
 end.
