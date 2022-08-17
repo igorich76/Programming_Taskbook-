@@ -8,3 +8,17 @@ begin
       Rez *= i;    
  Print(Rez);//можно так - Write('!',N,'= ',Rez); но авто проверку не пройдёт!
 end.
+// блин, не знал, что сделал задачу и замострячил ещё один вариант
+
+uses PT4;
+
+begin
+  Task('For19');
+  var fc := 1.0;
+  var n := ReadlnInteger('Введите число');  
+  for var i := 1 to n do
+  begin
+    fc *= i;
+  end;
+  Print(fc);  
+end.
