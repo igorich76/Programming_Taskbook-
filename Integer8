@@ -1,4 +1,10 @@
 ##
+uses PT4;
+Task('Integer8');
+var a := ReadlnInteger;
+Print((a div 10) + (a mod 10) * 10);
+//////// другой вариант:
+##
 var n := ReadInteger;
 var (a,m) := (0,0); 
 while n > 0 do 
