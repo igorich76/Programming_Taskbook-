@@ -1,0 +1,8 @@
+//Даны целые числа K и N (N > 0). Вывести N раз число K.
+##
+//uses PT4; //автопроверка не работает!
+//Task('For1');
+var k := ReadlnInteger('Введите число:');
+var n := ReadlnInteger('Введите сколько раз его вывести:');
+for var i:=1 to n do
+  Print(k);
