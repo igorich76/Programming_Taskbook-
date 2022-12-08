@@ -6,3 +6,15 @@ var k := ReadlnInteger('Введите число:');
 var n := ReadlnInteger('Введите сколько раз его вывести:');
 for var i:=1 to n do
   Print(k);
+/////// Вариант Тестова + мой (я сам переделал покороче) //////////
+##
+procedure RepeatNumber(a: integer; b: integer);
+begin
+  for var i := 0 to b-1 do
+    Write(a, ' ');  
+end;
+
+var n := ReadInteger('Введите число:'); 
+var k := ReadInteger('Введите количество повторений: ');
+
+RepeatNumber(n, k); 
