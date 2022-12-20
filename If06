@@ -3,11 +3,11 @@ var (a,b) := ReadlnReal2;
   Print(Max(a,b)); 
 /////////
 ##
-var (a,b) := ReadInteger2('Введите 2 числа:');
+var (a,b) := ReadInteger2('Введите 2 числа:'); // для pt4 нужен Real!!!
 var max := if (a > b) then a else b;
 Print(max);
 /////////
 ##
-var (a,b) := ReadInteger2('Введите 2 числа:');
+var (a,b) := ReadInteger2('Введите 2 числа:'); // для pt4 нужен Real!!!
 var max := a > b ? a : b; // укороченная форма if
 Print(max);
