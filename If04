@@ -5,3 +5,13 @@ var (a,b,c) := ReadlnInteger3;
   If (Sign(b) > 0) then s := s+1;
   If (Sign(c) > 0) then s := s+1;
   s.Print;
+////// вариант попроще ////////
+##
+uses PT4;
+Task('if4');
+var (a,b,c) := ReadlnInteger3;
+var s := 0;
+if (a>0) then s+=1;
+if (b>0) then s+=1;
+if (c>0) then s+=1;
+Print(s);
