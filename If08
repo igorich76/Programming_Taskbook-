@@ -10,3 +10,12 @@ var (a,b) := ReadlnReal2;
     b.Println;
     a.Println;
   end;
+///////////////////////
+##
+uses PT4;
+Task('if8');
+var (a,b) := ReadReal2('Введите 2 числа:');
+var max := a > b ? a : b;
+Print(max);
+var min := a > b ? b : a;
+Print(min);
