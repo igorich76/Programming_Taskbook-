@@ -14,3 +14,12 @@ begin
   if (X<0) and (Y<0) then Writeln('Точка лежит в III координатной четверти');
   if (X>0) and (Y<0) then Writeln('Точка лежит в IV координатной четверти');
 end.
+/////////////
+##
+uses PT4;
+Task('if22');
+var (x, y) := ReadlnReal2;
+if (x > 0) and (y > 0) then Print(1);
+if (x < 0) and (y > 0) then Print(2);
+if (x < 0) and (y < 0) then Print(3);
+if (x > 0) and (y < 0) then Print(4);
