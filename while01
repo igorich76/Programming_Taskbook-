@@ -1,0 +1,11 @@
+##
+uses PT4;
+Task('while1');
+var (a,b):=Readlnreal2;
+var c:=0.0;
+repeat
+    c:=a-b;
+    a:=c;
+until (b>a);
+Print(c);
+/////////////
