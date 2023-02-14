@@ -1,0 +1,12 @@
+##
+uses PT4;
+Task('while2');
+var (a,b):=Readlnreal2;
+var (c,cnt):=(0.0,0);
+while (b<a) do
+  begin
+    c:=a-b;
+    a:=c;
+    cnt+=1;
+  end;
+Print(cnt);
