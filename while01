@@ -9,3 +9,15 @@ repeat
 until (b>a);
 Print(c);
 /////////////
+##
+uses PT4;
+Task('while1');
+var (a,b):=Readlnreal2;
+var c:=0.0;
+while (b<a) do
+  begin
+    c:=a-b;
+    a:=c;
+  end;
+Print(c);
+// получается, в первой задаче такое логич. условие, а во второй строго наоборот
