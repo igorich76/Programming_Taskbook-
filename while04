@@ -1,0 +1,13 @@
+##
+uses PT4;
+Task('while4');
+var N:=ReadlnInteger;
+var (a,c,cnt):=(3,0.0,0);
+while (c<N) do 
+  begin
+    c:= a**cnt;
+    cnt+=1;
+  end;
+if (c=N) then Print(True);
+if (c>N) then Print(False);
+// уфф, попотел...!
