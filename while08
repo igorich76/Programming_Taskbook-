@@ -1,0 +1,28 @@
+// Бобровский Г
+##
+uses robot;
+task('w8');
+repeat
+  Paint;
+  Right;
+until FreeFromDown ;
+Left;
+repeat
+  Paint;
+  Left;
+until FreeFromDown ;
+////////////////
+##
+uses robot;
+task('w8');
+while WallFromDown do
+begin
+  Paint;
+  Right;
+end; 
+left;
+while WallFromDown do
+begin
+  Paint;
+  Left;
+end;
