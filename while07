@@ -1,0 +1,18 @@
+// Бобровский Г (один вариант ошибочный, там, где закрашенные клетки рядом)
+##
+uses robot;
+task('w7');
+repeat
+  Right;
+until CellIsPainted;
+Up;
+repeat
+  Up;
+until CellIsPainted;
+repeat
+  Right;
+until CellIsfree;
+
+repeat
+  Right;
+until CellIsPainted;
