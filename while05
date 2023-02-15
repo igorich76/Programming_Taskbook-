@@ -1,0 +1,12 @@
+// Боборовский Г
+##
+uses robot;
+task('w5');
+repeat
+  Down;
+until CellIsFree;
+Up;
+repeat
+  Right;
+until CellIsFree;
+Left;
