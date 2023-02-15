@@ -1,0 +1,37 @@
+// Бобровский Г
+##
+uses robot;
+task('w6');
+repeat
+  Down;
+until WallFromDown;
+
+repeat
+  Right;
+until FreeFromDown;
+repeat
+  Down;
+until WallFromDown;
+repeat
+  Right;
+until WallFromRight;
+/////////////////
+##
+uses robot;
+task('w6');
+while FreeFromDown do
+begin
+  Down;
+end; 
+while WallFromDown do
+begin
+  Right;
+end; 
+while FreeFromDown do
+begin
+  Down;
+end; 
+while FreeFromRight do
+begin
+  Right;
+end; 
