@@ -1,9 +1,0 @@
-##
-//uses PT4;
-//Task('Array2');
-
-var n:=ReadlnInteger();
-var a: array [1..10] of integer;
-a[1] := 2;
-for var i := 2 to n do a[i] := a[i-1]*2;
-for var i := 1 to n do Println(a[i]);
