@@ -1,13 +1,3 @@
-{
-Дан массив вещественных чисел размера 10.
-Вывести его первый и последний элемент
-7.38,4.37,7.75,0.80,7.77,1.20,4.00,9.21,8.18,8.43
-}
-// не пойму, что это за решение...
-##
-var a := new real[10](7.38, 4.37, 7.75, 0.80, 7.77, 1.20, 4.00, 9.21, 8.18, 8.43);  
-Println(a[0]);
-Print(a[9]);
 // Array1
 ##
 //uses PT4;
@@ -18,3 +8,17 @@ var a: array [1..10] of integer;
 
 for var i := 1 to n do a[i] := i*2-1;
 for var i := 1 to n do Println(a[i]);
+
+// нигде не подсматривал, сам сделал 25-05-2023
+##
+uses pt4;
+Task('array1');
+var N := ReadlnInteger;
+var a: array of integer := new integer[N];
+var K := 1;
+for var i:=0 to a.Length-1 do
+  begin
+    a[i] += K;
+    K += 2;
+  end;
+a.Print;  
