@@ -1,0 +1,15 @@
+##
+uses PT4;
+Task('Array4');
+var n:=ReadlnInteger();
+var a: array of real := new real[n];
+var k := ReadlnReal;
+var d := ReadlnReal;
+var stepen := 0;
+for var i:=0 to a.Length-1 do
+  begin
+    a[i] := k;
+    stepen += 1;
+    k *= d;
+  end;
+a.Println;
