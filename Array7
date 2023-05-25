@@ -1,0 +1,8 @@
+// недоделано...
+##
+uses PT4;
+Task('Array7');
+var n:=ReadlnInteger();
+var a: array of real := new real[n];
+//a.Reverse.Print;
+a.Println;
