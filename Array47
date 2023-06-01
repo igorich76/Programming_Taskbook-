@@ -1,0 +1,14 @@
+##
+//uses PT4;
+//Task('Array47');
+var N := ReadlnInteger();
+var A: array of integer := new integer[N];
+A.Println;
+for var i:=0 to A.Length-1 do
+  A[i] := ReadlnInteger;
+A.Println;
+var (cnt,k) := (0,0);
+for var i:=0 to A.Length-1 do
+  for k:=i+1 to A.Length-1 do
+    if (A[i] <> A[k]) then cnt += 1; 
+cnt.Println;
