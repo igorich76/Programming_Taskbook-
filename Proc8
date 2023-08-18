@@ -1,0 +1,16 @@
+uses PT4;
+procedure AddRightDigit(var K, D1, D2: integer);
+begin
+  K := K * 10 + D1;
+  Print(K);
+  K := K * 10 + D2;
+  Print(K);
+end;
+begin
+ Task('Proc8');
+ var K := ReadInteger;
+ var D1 := ReadInteger;
+ var D2 := ReadInteger;
+ AddRightDigit(K, D1, D2);
+end.
+// уже полегче было, за час зафигачил, никуда не подсматривал
