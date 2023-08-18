@@ -1,0 +1,17 @@
+uses PT4;
+procedure TrianglePS(a, P, S: real);
+begin
+  P := 3 * a;
+  S := (Sqrt(3)/4)*(a*a);
+  Write(P); Write(S);
+end;
+begin
+  Task('Proc4');
+  var (a1,a2,a3) := ReadlnReal3();
+  var P,S: real;
+  
+  TrianglePS(a1, P, S);
+  TrianglePS(a2, P, S);
+  TrianglePS(a3, P, S);
+end.
+// ну я и запарился делать, дня три делал, не мог понять, как выводить данные
