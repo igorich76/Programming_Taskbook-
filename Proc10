@@ -1,3 +1,4 @@
+## // с решётками и без begin-end
 uses PT4;
 procedure Swap(var x,y: real);
 begin
@@ -7,13 +8,13 @@ begin
   y := dop; 
 end;
 
-begin
  Task('Proc10');
  var (a, b, c, d) := ReadlnReal4;
  Swap(a,b);
  Swap(c,d);
  Swap(b,c);
  Print(a); Print(b); Print(c); Print(d);
-end.
+
 
 // за часок сварганил прогу... Так держать!
+// кстати, новая запись программы!
