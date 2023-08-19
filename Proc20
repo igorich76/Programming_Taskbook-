@@ -1,0 +1,17 @@
+uses PT4;
+function TriangleP(a, h: real): real;
+begin
+  a := ReadlnReal;
+  h := ReadlnReal;
+  Result := 2 * Sqrt(Sqr(a/2) + Sqr(h)) + a;
+  Print(Result);
+end;
+begin
+ Task('Proc20');
+ var a, h: real;
+ TriangleP(a,h);
+ TriangleP(a,h);
+ TriangleP(a,h);
+end.
+
+// пришлось с формулой повозиться. И с данными немного повозился.
