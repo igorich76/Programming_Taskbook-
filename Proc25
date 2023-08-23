@@ -1,0 +1,18 @@
+uses PT4;
+function IsSquare(k: integer): boolean;
+begin
+ if k = Sqr(Round(Sqrt(k))) then IsSquare := true
+  else IsSquare := false;
+end;
+
+begin
+ Task('Proc25');
+ var k, res: integer;
+ var cnt := 0;
+ for var i:=1 to 10 do 
+   begin
+    k := ReadlnInteger;
+    if IsSquare(k) then cnt += 1;
+   end;
+ Print(cnt);
+end.
