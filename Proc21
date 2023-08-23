@@ -1,0 +1,19 @@
+uses PT4;
+function SumRange(a, b: integer): integer;
+begin
+  var sum := 0;
+  for var i:=a to b do 
+    begin
+      if (a > b) then Print(0)
+        else sum += i;
+    end;
+Print(sum); 
+end;
+begin
+ Task('Proc21');
+ var a := ReadlnInteger('введите а =');
+ var b := ReadlnInteger('введите b =');
+ var c := ReadlnInteger('введите c =');
+ SumRange(a, b);
+ SumRange(b, c);
+end.
