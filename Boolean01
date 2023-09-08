@@ -3,3 +3,22 @@ var a := ReadlnInteger;
   If (Sign(a) > 0) then Write(true);
   If (Sign(a) = 0) then Write(false);
   If (Sign(a) < 0) then Write(false);
+////////////////////////
+// повторил решение, т.к. забыл, что делал это задание:
+uses PT4;
+begin
+  Task('Boolean1');
+  var a := ReadlnInteger();
+  if a > 0 then Print(a > 0);
+  if a < 0 then Print(a > 0);
+  if a = 0 then Print(a <> 0);
+end.
+/////////////////////////
+// решение Рубанцева (красиво!):
+uses PT4;
+begin
+  Task('Boolean1');
+  var a := ReadlnInteger();
+  var v := a > 0;
+  Print(v);
+end.
