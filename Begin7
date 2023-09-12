@@ -1,0 +1,10 @@
+uses PT4;
+
+begin
+  Task('Begin7');
+  var pi := 3.14;
+  var R := ReadlnReal();
+  var L := 2*pi*R;
+  var S := pi*(R**2);
+  Print(L, S);
+end.
