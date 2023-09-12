@@ -1,0 +1,9 @@
+uses PT4;
+
+begin
+  Task('Begin22');
+  var A := ReadlnReal();
+  var B := ReadlnReal();
+  Swap(A, B);
+  println(A,B);
+end.
