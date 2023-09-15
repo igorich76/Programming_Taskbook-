@@ -1,0 +1,6 @@
+## 
+uses pt4;
+
+Task('boolean2');
+var a := ReadlnInteger();
+if a mod 2 <> 0 then Print(true) else Print(false); 
