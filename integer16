@@ -1,0 +1,5 @@
+##
+uses pt4;
+Task('integer16');
+var a := ReadlnInteger();
+Print((a mod 10)*10 + ((a mod 100) div 10 )+ (a div 100)*100);
