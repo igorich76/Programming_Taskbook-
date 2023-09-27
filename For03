@@ -11,9 +11,9 @@ begin
   b -= 1;
   s += 1;
   Print(b);
-  end;
-  Println();
-  Print(s);
+end;
+Println();
+Print(s);
 ///////////////-вариант с downto-////////
 ##
 //uses PT4; //автопроверка не работает!
@@ -25,6 +25,6 @@ for var i:=b-1 downto a+2 do
 begin
   s += 1;
   Print(i);
-  end;
-  Println();
-  Print(s);
+end;
+Println();
+Print(s);
