@@ -4,8 +4,7 @@
 //Task('For1');
 var k := ReadlnInteger('Введите число:');
 var n := ReadlnInteger('Введите сколько раз его вывести:');
-for var i:=1 to n do
-  Print(k);
+for var i:=1 to n do Print(k);
 /////// Вариант Тестова + мой (я сам переделал покороче) //////////
 ##
 procedure RepeatNumber(a: integer; b: integer);
