@@ -11,19 +11,14 @@ begin
 end.
 //лёгкая задача
 //вариант с визуальным представлением:
-
-{$apptype windows}
+##
 uses graphabc;
-
-begin
-  SetWindowSize(300,150); //ширина, высота
-  SetFontSize(20); //размер шрифта!
-  var A := ReadlnReal('Введите число>>');
-  Println(A);
-  var N := ReadlnInteger('Введите степень>>');
-  Println(N);
-  var rez := 1.0;
-  for var i := 1 to N do
-    rez *= A;
-  Println('Ответ=',rez);
-end.
+SetWindowSize(300,150); //ширина, высота окна
+SetFontSize(20); //размер шрифта!
+var A := ReadlnReal('Введите число>>');
+Println(A);
+var N := ReadlnInteger('Введите степень>>');
+Println(N);
+var rez := 1.0;
+for var i := 1 to N do rez *= A;
+Println('Ответ=',rez);
