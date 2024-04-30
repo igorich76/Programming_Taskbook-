@@ -9,7 +9,7 @@ var a: array [1..10] of integer;
 for var i := 1 to n do a[i] := i*2-1;
 for var i := 1 to n do Println(a[i]);
 
-// нигде не подсматривал, сам сделал 25-05-2023
+////////////////////////// нигде не подсматривал, сам сделал 25-05-2023
 ##
 uses pt4;
 Task('array1');
@@ -22,3 +22,12 @@ for var i:=0 to a.Length-1 do
     K += 2;
   end;
 a.Print;  
+///////////////////////////////
+## //01-05-2024
+//uses PT4;
+//Task('Array1');
+var N := ReadInteger('Введите целое число:');
+var arr: array of integer := new integer[N];
+arr[0] := 1;
+for var i := 1 to N-1 do arr[i] := arr[i-1]+2;
+Print(arr);
