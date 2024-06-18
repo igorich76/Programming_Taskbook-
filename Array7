@@ -6,3 +6,12 @@ var a: array of real := new real[n];
 for var i:=0 to a.Length-1 do
   a[i] := ReadlnReal;
 a.Reverse.Println;
+/////////////////////////////
+// 18-06-2024 просто так сделал
+##
+uses PT4;
+Task('Array7');
+var n := ReadlnInteger();
+var mass := new real[n];
+for var i := 0 to n-1 do mass[i] := ReadReal;
+mass.Reverse.Print;
