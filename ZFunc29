@@ -1,0 +1,17 @@
+##
+uses PT4;
+procedure F(var k: integer; d: integer);
+begin
+  var k_k := k.ToString;
+  var d_d := d.ToString;
+  k_k := k_k + d_d;
+  k := k_k.ToInteger;
+end;
+Task('ZFunc29');
+var k := ReadlnInteger('Введите к:');
+var d1 := ReadlnInteger('Введите d1:');
+F(k,d1);
+Println(k);
+var d2 := ReadlnInteger('Введите d2:');
+F(k,d2);
+Println(k);
