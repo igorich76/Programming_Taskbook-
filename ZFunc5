@@ -1,0 +1,14 @@
+## 
+uses PT4;
+function TriangleP(a,h: real): real;
+begin
+  var Sqr_b := (a/2)**2 + h**2;
+  var b := Sqrt(Sqr_b);
+  Result := a + b + b;
+end;
+//
+Task('ZFunc5');
+Println(TriangleP(ReadReal, ReadReal));
+Println(TriangleP(ReadReal, ReadReal));
+Println(TriangleP(ReadReal, ReadReal))
+// за 1,5 часа сварганил... 18-07-2024
