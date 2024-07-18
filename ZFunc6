@@ -1,0 +1,11 @@
+## 
+uses PT4;
+function SumRange(a,b: integer): integer;
+begin
+  if (a < b) then Result := (a..b).Sum
+  else Result := 0;
+end;
+Task('ZFunc6');
+var (A,B,C) := ReadInteger3;
+Println(SumRange(A,B));
+Print(SumRange(B,C));
