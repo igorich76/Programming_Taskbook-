@@ -1,0 +1,14 @@
+##
+function SumAl(n: integer): integer;
+begin
+  var mass := new integer[n];
+  for var i := 0 to mass.Length - 1 do 
+    mass[i] := i * 2 + 1;
+  Result := mass.Sum;
+end;
+
+var (n1, n2, n3) := readinteger3;
+
+println(SumAl(n1));
+println(SumAl(n2));
+println(SumAl(n3));
